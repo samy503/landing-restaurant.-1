@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción | Restaurante Rocky</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="./assets/husky-svgrepo-com.svg" alt="Logo del restaurante">
+
+        <h1 class="titulo">Restaurante Rocky</h1>
+
+        <ul class="nav">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="contacto">
+        <h1>Suscríbete a Restaurante Rocky</h1>
+        <p>
+            Recibe nuestras promociones, nuevos platos
+            y eventos en tu correo.
+        </p>
+
+        <form class="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="name" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" autocomplete="email" required>
+
+            <div class="opciones">
+                <label class="opcion">
+                    <input type="checkbox" name="promociones" value="si">
+                    <span>
+                        Quiero recibir promociones y descuentos.
+                    </span>
+                </label>
+
+                <label class="opcion">
+                    <input type="checkbox" name="eventos" value="si">
+                    <span>
+                        Quiero recibir noticias sobre nuevos
+                        platos y eventos.
+                    </span>
+                </label>
+            </div>
+
+            <button type="submit">Suscribirme</button>
+        </form>
+    </main>
+</body>
+
+</html>
