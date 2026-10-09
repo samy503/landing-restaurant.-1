@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar {
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar {
+
+    background-color: #45adad;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    position: fixed;
+
+}
+
+.navbar h1 {
+
+    color: rgb(46, 6, 139);
+    font-family: "Libre Caslon Condensed", serif;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: "Libre Caslon Condensed", serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.container {
+    background-image: url("https://res.cloudinary.com/mbzeig8w/image/upload/f_auto/q_auto/cld-sample-4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #00c996, #003d4d);
+    /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #00c996, #003d4d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div h1 {
+    font-size: 2.5rem;
+    color: white;
+    background-color: #080d19;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container div h3 {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(11, 12, 12);
+    text-align: center;
+
+}
+
+/* card section*/
+
+.cards-section {
+    padding: 4rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.card {
+    background-color: azure;
+    border-radius: 10px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+
+    font-size: 1.5rem;
+    color: rgb(95, 18, 5);
+}
+
+.card-content p {
+
+    font-size: 0.9rem;
+    color: #45adad;
+    line-height: 2.0;
+}
+
+.card-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.card-btn {
+    padding: .3rem 1.1rem;
+    width: 100%;
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.card-btn:hover {
+    background-color: #555;
+}
+
+
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.ejercicio1 {
+    background-color: #080d19;
+    min-height: 500px;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-title {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.card-2 {
+    width: 900px;
+    max-width: 90%;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.card-2 img {
+    width: 300px;
+    height: 400px;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.card-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+    .card-2 {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .card-2 img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+
+.container>div {
+    padding: 0 20px;
+}
+
+
+.cards-section .cards-title {
+    color: #222;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Libre Caslon Condensed", serif;
+}
+
+
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.formulario .opcion {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.formulario input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    flex-shrink: 0;
+    accent-color: #45adad;
+}
+
+.formulario button {
+    padding: 12px;
+    background-color: #45adad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #287777;
+}
+
+.formulario .opcion {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.formulario input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 3px 0 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.formulario {
+    gap: 15px;
+}
+
+.contacto {
+    padding: 130px 20px 60px;
+    text-align: center;
+}
+
+.contacto>h1 {
+    margin-bottom: 15px;
+}
+
+.contacto>p {
+    margin-bottom: 30px;
+}
+
+.formulario .opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-restaurante {
+    padding: 130px 20px 60px;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.menu-restaurante>h1 {
+    color: #080d19;
+    margin-bottom: 15px;
+}
+
+.menu-restaurante>p {
+    line-height: 1.5;
+}
+
+.menu-restaurante section {
+    margin-top: 40px;
+    scroll-margin-top: 120px;
+}
+
+.menu-restaurante section h2 {
+    margin-bottom: 25px;
+    color: #080d19;
+    font-size: 30px;
+}
+
+.menu-restaurante .card {
+    width: 320px;
+    max-width: 100%;
+}
+
+.menu-restaurante .card-content h3 {
+    color: #080d19;
+    margin-bottom: 15px;
+}
+
+.menu-restaurante .card-content p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.menu-restaurante .precio {
+    display: block;
+    margin-top: 20px;
+    color: #287777;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    .menu-restaurante .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .navbar .titulo {
+        font-size: 20px;
+        max-width: 55%;
+    }
+}
